@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context="com.doersweb.basiccontactinfo.MainActivity">
+
+
+    <TextView
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/nameTv"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/contact_image"
+        android:textColor="#073089"
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/name"
+        android:textSize="18sp"
+        android:textColorHint="#33B5E5"
+        android:hint="Enter your name"
+        android:textColor="#33B5E5"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/phoneTv"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/name"
+        android:textColor="#073089"
+        android:text="Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:maxLength="10"
+        android:inputType="number"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/phone"
+        android:textSize="18sp"
+        android:textColorHint="#33B5E5"
+        android:hint="Enter your phone number"
+        android:textColor="#33B5E5"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/phoneTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/emailTv"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/phone"
+        android:textColor="#073089"
+        android:text="Email Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/email"
+        android:textSize="18sp"
+        android:textColorHint="#33B5E5"
+        android:hint="Enter your mail id"
+        android:textColor="#33B5E5"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/emailTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/updateContact"
+        android:textStyle="bold"
+        android:textColor="#33B5E5"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/email"
+        android:text="Update Contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
